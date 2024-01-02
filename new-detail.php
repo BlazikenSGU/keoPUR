@@ -1,7 +1,30 @@
+<?php
+include('connectDB.php');
+
+$row = $news->fetch_assoc();
+
+$currentURL = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+if (strpos($currentURL, 'new-detail') !== false) {
+    $urlParts = explode('new-detail', $currentURL);
+    $newURL = $urlParts[0];
+}
+
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+    $query = "SELECT * FROM news WHERE id = '" . $id . "' ";
+    $result = $conn->query($query);
+
+    $row = $result->fetch_assoc();
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <base href="<?php echo $newURL ?>">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -11,33 +34,33 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <title>Tin tức</title>
+    <title> Thông tin chi tiết </title>
 </head>
 
 <body>
 
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="index.html" class="nav__logo">
+            <a href="home" class="nav__logo">
                 <i class="ri-leaf-line nav__logo-icon"></i> Đông Bắc
             </a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">Home</a>
+                        <a href="home" class="nav__link ">Home</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#about" class="nav__link">About</a>
+                        <a href="#" class="nav__link">About</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#products" class="nav__link">Product</a>
+                        <a href="#" class="nav__link">Product</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#faqs" class="nav__link">News</a>
+                        <a href="#" class="nav__link active-link">News</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#contact" class="nav__link">Contact</a>
+                        <a href="#" class="nav__link">Contact</a>
                     </li>
                 </ul>
 
@@ -56,57 +79,32 @@
         </nav>
     </header>
 
+
     <main class="main">
-        <section class="about section container" id="faqs">
-            <div class="about__container grid">
-                <img src="assets/img/about.png" class="about__img" alt="">
-
-                <div class="about__data">
-                    <h2 class="section__title about__title">
-                        who we really are & <br> why choose us
-                    </h2>
-
-                    <p class="about__description">
-                        we have over 4000+ unbiased reviews and our customer rush our plan process and delivery service
-                        every time
-                    </p>
-
-                    <div class="about__details">
-                        <p class="about__details-description">
-                            <i class="ri-checkbox-fill about__details-icon"></i>
-                            asdsa
-                        </p>
-                        <p class="about__details-description">
-                            <i class="ri-checkbox-fill about__details-icon"></i>
-                            asdsa
-                        </p>
-                        <p class="about__details-description">
-                            <i class="ri-checkbox-fill about__details-icon"></i>
-                            asdsa
-                        </p>
-                        <p class="about__details-description">
-                            <i class="ri-checkbox-fill about__details-icon"></i>
-                            asdsa
-                        </p>
-                    </div>
-
-                    <!-- <a href="news.html" class="button--link button--flex">
-                        Xem thêm <i class="ri-arrow-right-down-line button__icon"></i>
-                    </a> -->
-
-                </div>
-            </div>
-        </section>
-
-        <section class="viewlist section container">
+        <section class="detail section container">
             <div>
-                <div class="new">
-                    <img src="" alt="">
-                    <h1>Keo PUR là gì? Sử dụng như thế nào</h1>
-                </div>
+                <button id="url" class="buttonBack">
+                    <i class="ri-arrow-go-back-fill"></i>
+                </button>
             </div>
+
+            <div class="detail-content">
+                <h1>
+                    <?= $row['title'] ?>
+                </h1>
+                <span>
+                    <i class="ri-time-line"></i>:
+                    <?= $row['createdAt'] ?>
+                </span>
+                <img src="<?= $row['image'] ?>" alt="">
+                <p>
+                    <?= $row['content'] ?>
+                </p>
+            </div>
+            <hr>
         </section>
     </main>
+
 
     <footer class="footer section">
         <div class="footer__container container grid">
@@ -184,9 +182,9 @@
         <i class="ri-arrow-up-circle-line scrollup__icon"></i>
     </a>
 
-    <script src="assets/js/route.js"></script>
-
+    <script src="assets/js/rewrite.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/back.js"></script>
 
 </body>
 

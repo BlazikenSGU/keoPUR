@@ -19,14 +19,14 @@
 
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="index.html" class="nav__logo">
+            <a href="home" class="nav__logo">
                 <i class="ri-leaf-line nav__logo-icon"></i> Đông Bắc
             </a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">Home</a>
+                        <a href="home" class="nav__link active-link">Home</a>
                     </li>
                     <li class="nav__item">
                         <a href="#about" class="nav__link">About</a>
@@ -68,7 +68,7 @@
 
                 <div class="home__data">
                     <h1 class="home__title">
-                        Chất Kết Dính Keo Micro Emission PUR
+                        Chất Kết Dính, Keo Micro Emission PUR
                     </h1>
                     <p class="home__description">
                         Polyurethane Reactive hay PUR, đơn giản là một chuỗi các polyme có chung hóa học tương tự,
@@ -101,9 +101,9 @@
             </div>
         </section>
 
-          <section class="questions section" id="about">
+        <section class="questions section" id="about">
             <h2 class="section__title-center question__title container">
-                some common Questions <br> were often asked
+                Thông tin về keo PUR
             </h2>
 
             <div class="questions__container container grid">
@@ -112,14 +112,14 @@
                         <header class="questions__header">
                             <i class="ri-add-line question__icon"></i>
                             <h3 class="questions__item-title">
-                                cau hoi 1
+                                Keo PUR là gì ?
                             </h3>
                         </header>
 
                         <div class="questions__content">
                             <p class="questions__description">
-                                Plants are easy way to add color energy and transform your space but which planet is for
-                                you. Choosing the right plant.
+                                Keo PUR (Polyurethane) là vật liệu tổng hợp cấu thành từ nhiều thành phần hữu cơ liên
+                                kết bằng urethane.
                             </p>
                         </div>
                     </div>
@@ -128,14 +128,14 @@
                         <header class="questions__header">
                             <i class="ri-add-line question__icon"></i>
                             <h3 class="questions__item-title">
-                                cau hoi 2
+                                Sử dụng cho bề mặt nào ?
                             </h3>
                         </header>
 
                         <div class="questions__content">
                             <p class="questions__description">
-                                Plants are easy way to add color energy and transform your space but which planet is for
-                                you. Choosing the right plant.
+                                Ứng dụng trong sản xuất nội thất gỗ công nghiệp nói chung và dán cạnh nói riêng
+                                , PVC, PE, PP, Teflon, Acrylic PMMA.
                             </p>
                         </div>
                     </div>
@@ -144,14 +144,13 @@
                         <header class="questions__header">
                             <i class="ri-add-line question__icon"></i>
                             <h3 class="questions__item-title">
-                                cau hoi 3
+                                Thành phần keo PUR ?
                             </h3>
                         </header>
 
                         <div class="questions__content">
                             <p class="questions__description">
-                                Plants are easy way to add color energy and transform your space but which planet is for
-                                you. Choosing the right plant.
+                                Thành phần chính của keo pur là nhựa Polyurethane (PU)
                             </p>
                         </div>
                     </div>
@@ -160,14 +159,15 @@
                         <header class="questions__header">
                             <i class="ri-add-line question__icon"></i>
                             <h3 class="questions__item-title">
-                                cau hoi 4
+                                Thông số kỹ thuật keo PUR
                             </h3>
                         </header>
 
                         <div class="questions__content">
                             <p class="questions__description">
-                                Plants are easy way to add color energy and transform your space but which planet is for
-                                you. Choosing the right plant.
+                                Nhiệt độ nóng chảy keo PUR từ 130-180 độ C. Keo càng nhớt thì trọng lượng phân tử càng
+                                thấp.
+                                Chỉ số MFI là 30.000 mPas / 140 độ C.
                             </p>
                         </div>
                     </div>
@@ -179,14 +179,14 @@
                         <header class="questions__header">
                             <i class="ri-add-line question__icon"></i>
                             <h3 class="questions__item-title">
-                                cau hoi 5
+                                Ưu điểm nổi bật
                             </h3>
                         </header>
 
                         <div class="questions__content">
                             <p class="questions__description">
-                                Plants are easy way to add color energy and transform your space but which planet is for
-                                you. Choosing the right plant.
+                                Thời gian sử dụng lâu dài và không lần lo lắng rủi ro xảy ra khi lưu kho và xử lý.
+                                Không phán tán chất thải độc hại. Ngoài ra keo còn có tính hãm cháy.
                             </p>
                         </div>
                     </div>
@@ -195,14 +195,13 @@
                         <header class="questions__header">
                             <i class="ri-add-line question__icon"></i>
                             <h3 class="questions__item-title">
-                                cau hoi 6
+                                Nhược điểm của keo PUR
                             </h3>
                         </header>
 
                         <div class="questions__content">
                             <p class="questions__description">
-                                Plants are easy way to add color energy and transform your space but which planet is for
-                                you. Choosing the right plant.
+                                Nhạy cảm với nhiệt độ, tránh để keo tiếp xúc với nhiệt độ quá cao.
                             </p>
                         </div>
                     </div>
@@ -211,14 +210,14 @@
                         <header class="questions__header">
                             <i class="ri-add-line question__icon"></i>
                             <h3 class="questions__item-title">
-                                cau hoi 7
+                                Ứng dụng của keo PUR
                             </h3>
                         </header>
 
                         <div class="questions__content">
                             <p class="questions__description">
-                                Plants are easy way to add color energy and transform your space but which planet is for
-                                you. Choosing the right plant.
+                                Ứng dụng trên dây chuyền sản xuất lắp ráp của các ngành Công nghiệp.
+                                Bao gồm: Dệt may, Bỉm tã, Điện tử, In ấn, Xây dựng.
                             </p>
                         </div>
                     </div>
@@ -227,14 +226,15 @@
                         <header class="questions__header">
                             <i class="ri-add-line question__icon"></i>
                             <h3 class="questions__item-title">
-                                cau hoi 8
+                                Nhận xét và tổng kết về keo PUR
                             </h3>
                         </header>
 
                         <div class="questions__content">
                             <p class="questions__description">
-                                Plants are easy way to add color energy and transform your space but which planet is for
-                                you. Choosing the right plant.
+                                Đem lại nhiều công dụng, cụ thể có tính chống nước, bền bỉ cho vật liệu.
+                                Độ bám dính của keo nhiệt PUR cực cao và tốc độ khô vô cùng ấn tượng.
+                                Ngoài ra không thải chất độc ra môi trường, an toàn sức khoẻ cho người dùng.
                             </p>
                         </div>
                     </div>
@@ -247,28 +247,29 @@
         <section class="steps section container">
             <div class="steps__bg">
                 <h2 class="section__title-center steps__title">
-                    Step to start your <br> plants off right
+                    Các bước tiến hành <br> đặt mua keo PUR.
                 </h2>
 
                 <div class="steps__container grid">
                     <div class="steps__card">
                         <div class="steps__card-number">01</div>
-                        <h3 class="steps__card-title">Choose plan</h3>
-                        <p class="steps__card-description">we have several varieties plants you can choose from</p>
+                        <h3 class="steps__card-title">Tìm hiểu và chọn keo</h3>
+                        <p class="steps__card-description">Tra cứu phân biệt keo PUR và keo EVA. Nếu khó khăn, hãy liên
+                            hệ chúng tôi </p>
                     </div>
 
                     <div class="steps__card">
                         <div class="steps__card-number">02</div>
-                        <h3 class="steps__card-title">place an order</h3>
-                        <p class="steps__card-description">Once your order is set, we move to the next step which is the
-                            shipping</p>
+                        <h3 class="steps__card-title">Thêm vào giỏ đặt hàng</h3>
+                        <p class="steps__card-description"> Chúng tôi có bán cả sỉ và lẻ, giá tốt và ưu đãi nhiều hơn
+                            khi mua theo số lượng lớn</p>
                     </div>
 
                     <div class="steps__card">
                         <div class="steps__card-number">03</div>
-                        <h3 class="steps__card-title">Get plants delivered</h3>
-                        <p class="steps__card-description">Our delivery process is easy, you receive the plant direct to
-                            your door </p>
+                        <h3 class="steps__card-title">Gửi thông tin nhận hàng</h3>
+                        <p class="steps__card-description"> Sau khi đầy đủ thông tin, chúng tôi sẽ tiến hành đi đơn cho
+                            bạn. </p>
                     </div>
                 </div>
             </div>
@@ -280,7 +281,8 @@
             </h2>
 
             <p class="product__description">
-                Dưới đây là một số dòng keo PUR sử dụng cho nhu cầu dán khác nhau được nhập khẩu từ các nhãn hàng lớn khác nhau trên thế giới.
+                Dưới đây là một số dòng keo PUR sử dụng cho nhu cầu dán khác nhau được nhập khẩu từ các nhãn hàng lớn
+                khác nhau trên thế giới.
             </p>
 
             <div class="product__container grid">
@@ -366,41 +368,41 @@
 
         </section>
 
-     
+
         <section class="about section container" id="faqs">
             <div class="about__container grid">
                 <img src="assets/img/about.png" class="about__img" alt="">
 
                 <div class="about__data">
                     <h2 class="section__title about__title">
-                        who we really are & <br> why choose us
+                        Tin tức mới nhất về các dòng sản phẩm
                     </h2>
 
                     <p class="about__description">
-                        we have over 4000+ unbiased reviews and our customer rush our plan process and delivery service
-                        every time
+                        Chúng tôi có nhiều sản phẩm đến từ các nhãn hàng lớn trên thế giới với nhiều dạng phân loại để
+                        sử dụng cho từng trường hợp khác nhau.
                     </p>
 
                     <div class="about__details">
                         <p class="about__details-description">
                             <i class="ri-checkbox-fill about__details-icon"></i>
-                            asdsa
+                            Ra mắt dòng sản phẩm mới về keo pur
                         </p>
                         <p class="about__details-description">
                             <i class="ri-checkbox-fill about__details-icon"></i>
-                            asdsa
+                            Ra mắt dòng sản phẩm mới về keo pur
                         </p>
                         <p class="about__details-description">
                             <i class="ri-checkbox-fill about__details-icon"></i>
-                            asdsa
+                            Ra mắt dòng sản phẩm mới về keo pur
                         </p>
                         <p class="about__details-description">
                             <i class="ri-checkbox-fill about__details-icon"></i>
-                            asdsa
+                            Ra mắt dòng sản phẩm mới về keo pur
                         </p>
                     </div>
 
-                    <a href="news.html" class="button--link button--flex">
+                    <a href="news" id="newsLink" class="button--link button--flex">
                         Xem thêm <i class="ri-arrow-right-down-line button__icon"></i>
                     </a>
 
@@ -412,12 +414,12 @@
             <div class="contact__container grid">
                 <div class="contact__box">
                     <h2 class="section__title">
-                        Reach out to us today <br> via any of the given infomation
+                        Gửi thông tin cho <br> chúng tôi
                     </h2>
 
                     <div class="contact__data">
                         <div class="contact__infomation">
-                            <h3 class="contact__subtitle"> Call us for instant support</h3>
+                            <h3 class="contact__subtitle"> Gọi cho chúng tôi để được tư vấn</h3>
                             <span class="contact__description">
                                 <i class="ri-phone-line"></i>
                                 +84 123 456 789
@@ -425,7 +427,7 @@
                         </div>
 
                         <div class="contact__infomation">
-                            <h3 class="contact__subtitle"> Send infomation to Email</h3>
+                            <h3 class="contact__subtitle"> Gửi thông tin cần hỗ trợ qua Email</h3>
                             <span class="contact__description">
                                 <i class="ri-mail-line"></i>
                                 user@gmail.com
@@ -454,7 +456,7 @@
                         </div>
                     </div>
 
-                    <button class="button button--flex">
+                    <button class="button button--flex" disabled>
                         Send message
                         <i class="ri-arrow-right-up-line button-icon"></i>
                     </button>
@@ -473,13 +475,13 @@
                 </a>
 
                 <h3 class="footer__title">
-                    subscribe to our newsletter <br> to stay update
+                    Đăng ký nhận thông tin mới <br> để cập nhật sản phẩm mới
                 </h3>
 
                 <div class="footer__subscribe">
                     <input type="email" placeholder="Enter your email" class="footer__input">
 
-                    <button class="button button--flex footer__button">
+                    <button class="button button--flex footer__button" disabled>
                         Subscribe
                         <i class="ri-arrow-right-up-line button__icon"></i>
                     </button>
@@ -489,18 +491,18 @@
 
             <div class="footer__content">
                 <h3 class="footer__title">
-                    Địa chỉ 
+                    Địa chỉ
                 </h3>
                 <ul class="footer__data">
-                    <li class="footer__infomation">35 Duong van an</li>
-                    <li class="footer__infomation">35 Duong van an</li>
-                    <li class="footer__infomation">35 Duong van an</li>
+                    <li class="footer__infomation">35 Dương Văn An,</li>
+                    <li class="footer__infomation">Phường An Phú,</li>
+                    <li class="footer__infomation">Quận 2, TPHCM</li>
                 </ul>
             </div>
 
             <div class="footer__content">
                 <h3 class="footer__title">
-                    Contact Us
+                    Liên hệ
                 </h3>
                 <ul class="footer__data">
                     <li class="footer__infomation">+84 123 456 789</li>
@@ -542,7 +544,7 @@
         <i class="ri-arrow-up-circle-line scrollup__icon"></i>
     </a>
 
-    <script src="assets/js/route.js"></script>
+    <script src="assets/js/rewrite.js"></script>
 
     <script src="assets/js/main.js"></script>
 

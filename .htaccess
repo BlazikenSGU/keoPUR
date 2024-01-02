@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # RewriteBase /
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^home/?$ index.php [L]
+  RewriteRule ^news/?$ news.php [L]
+  # RewriteRule ^new-detail/?$ new-detail.php [L]
+
+  RewriteRule ^new-detail/(.*)$ new-detail.php?id=$1 [L,QSA]
+
+</IfModule>
