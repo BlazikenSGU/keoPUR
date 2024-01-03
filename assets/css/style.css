@@ -337,6 +337,9 @@ img {
 }
 
 .button--link {
+    background-color: silver;
+    border-radius: 0.5rem;
+    padding: 1rem;
     color: var(--first-color);
     font-weight: var(--font-medium);
 }
@@ -1094,7 +1097,12 @@ body.dark-theme {
 }
 
 .new .info {
+
     margin-left: 1rem;
+}
+
+.new .info a span {
+    color: var(--first-color);
 }
 
 .news-title {
@@ -1131,9 +1139,17 @@ body.dark-theme {
     border-radius: 5px;
     background-color: silver;
     padding: 5px 20px;
-
 }
 
-.buttonBack i {
-    color: var(--first-color);
+.buttonBack:hover {
+    background-color: var(--first-color);
+    color: silver;
+}
+
+/* .buttonBack:hover .button__icon{
+    transform: translateY(-.5rem);
+} */
+
+.buttonBack:hover .button__icon {
+    transform: translateX(.25rem);
 }
