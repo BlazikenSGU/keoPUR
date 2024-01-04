@@ -39,31 +39,33 @@ if (isset($_GET['id'])) {
 </head>
 
 <body>
-    <div class=" container">
+    <div class=" container_view">
 
-    <button id="url" class="btn btn-secondary back" type="button">
-                <i class="fas fa-arrow-left"></i>
-            </button>
+        <button id="url" class="btn btn-secondary back" type="button">
+            <i class="fas fa-arrow-left"></i>
+        </button>
 
-        <h1 class="add_title">Chinh sua bai viet</h1>
+        <h1 class="add_title">Chỉnh sửa bài viết</h1>
         <?php if ($row = $get_item->fetch_assoc()) { ?>
 
-            <form action="" method="post" class="edit__news">
+            <form action="sql_edit.php" method="post" class="edit__news" enctype="multipart/form-data">
                 <span>ID:</span>
-                <input type="text" readonly value="<?= $row['id'] ?>">
+                <input type="text" name="id" readonly value="<?= $row['id'] ?>">
 
                 <span>Title</span>
-                <input type="text" value="<?= $row['title'] ?>">
+                <input type="text" name="title" value="<?= $row['title'] ?>">
 
-                <span>Image san pham</span>
-                <input type="text" value="<?= $row['image'] ?>">
+                <span>Image đại diện</span>
+                <img src="uploads/<?= $row['image'] ?>" alt="">
+                <br>
+                <input type="text" name="image" value="<?= $row['image'] ?>">
 
-                <span>Noi dung mo ta</span>
+                <span>Nội dung mô tả</span>
                 <div class="box">
                     <div class="form-group">
-                        <textarea name="" id="" cols="50" rows="10">
-                            <?= $row['content'] ?>
-                            </textarea>
+                        <textarea name="content" id="content" cols="50" rows="10">
+                                        <?= $row['content'] ?>
+                                        </textarea>
                     </div>
                 </div>
 
@@ -76,6 +78,8 @@ if (isset($_GET['id'])) {
             </form>
         <?php } ?>
     </div>
+
+    <script src="../assets/js/back.js"></script>
 
 </body>
 

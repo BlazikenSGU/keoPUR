@@ -39,11 +39,11 @@ if (isset($_GET['id'])) {
 </head>
 
 <body>
-    <div class="container">
+    <div class="container_view">
 
-    <button id="url" class="btn btn-secondary back" type="button">
-                <i class="fas fa-arrow-left"></i>
-            </button>
+        <button id="url" class="btn btn-secondary back" type="button">
+            <i class="fas fa-arrow-left"></i>
+        </button>
 
         <h1 class="add_title">Xem bai viet</h1>
         <?php if ($row = $get_item->fetch_assoc()) { ?>
@@ -55,15 +55,17 @@ if (isset($_GET['id'])) {
                 <span>Title</span>
                 <input type="text" readonly value="<?= $row['title'] ?>">
 
-                <span>Image san pham</span>
+                <span>Image sản phẩm</span>
+                <img src="uploads/<?= $row['image'] ?>" alt="">
+                <br>
                 <input type="text" readonly value="<?= $row['image'] ?>">
 
-                <span>Noi dung mo ta</span>
+                <span>Nội dung mô tả</span>
                 <div class="box">
                     <div class="form-group">
-                        <textarea readonly name="" id="" cols="50" rows="10">
-                            <?= $row['content'] ?>
-                            </textarea>
+                        <textarea readonly name="content" id="content" cols="50" rows="10">
+                                        <?= $row['content'] ?>
+                                        </textarea>
                     </div>
                 </div>
 
@@ -71,15 +73,11 @@ if (isset($_GET['id'])) {
                 <input type="text" readonly value="<?= $row['createdAt'] ?>">
                 <br>
 
-               
-
             </form>
         <?php } ?>
     </div>
 
-
-
-<script src="../assets/js/back.js"></script>
+    <script src="../assets/js/back.js"></script>
 </body>
 
 </html>

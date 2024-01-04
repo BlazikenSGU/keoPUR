@@ -96,7 +96,7 @@ if (isset($_GET['id'])) {
                     <i class="ri-time-line"></i>:
                     <?= $row['createdAt'] ?>
                 </span>
-                <img src="<?= $row['image'] ?>" alt="">
+                <img src="admin/uploads/<?= $row['image'] ?>" alt="">
                 <p>
                     <?= $row['content'] ?>
                 </p>

@@ -71,7 +71,7 @@ include('connectDB.php');
 
                 <?php while ($row = $news->fetch_assoc()) { ?>
                     <div class="new">
-                        <img src="<?= $row['image'] ?>" alt="">
+                        <img src="admin/uploads/<?= $row['image'] ?>" alt="">
                         <div class="info">
                             <a href="new-detail/<?= $row['id'] ?>">
                                 <h3>
