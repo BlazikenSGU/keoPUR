@@ -26,13 +26,12 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="tinymce/js/tinymce/tinymce.min.js"></script>
-    <!-- <script src="https://cdn.tiny.cloud/1/q32girmkj106tn6grxvn99jm1z4xqsdla3dnfweexj68mf8p/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script> -->
-    <!-- <script src="https://cdn.tiny.cloud/1/q32girmkj106tn6grxvn99jm1z4xqsdla3dnfweexj68mf8p/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script> -->
+    <script src="tinymce/js/tinymce/plugins"></script>
     <script>
 
         tinymce.init({
             selector: '#content',
-            height: 1000,
+            height: 800,
             plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage tinycomments tableofcontents footnotes mergetags autocorrect typography inlinecss',
             toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
             tinycomments_mode: 'embedded',
@@ -59,6 +58,7 @@
 
                     console.log(xhr.responseText);
                     const json = JSON.parse(xhr.responseText);
+                   
 
                     if (!json || typeof json.location != 'string') {
                         reject('Invalid JSON: ' + xhr.responseText);
@@ -84,7 +84,7 @@
 
 <body>
     <section class="main">
-        <div class="container">
+        <div class="container_view">
 
             <button id="url" class="btn btn-secondary back" type="button">
                 <i class="fas fa-arrow-left"></i>
@@ -95,7 +95,7 @@
             <form method="post" action="sql_add.php" class="add_news" enctype="multipart/form-data">
 
                 <span>ID</span>
-                <input type="text" name="id" value="<?= rand(); ?>">
+                <input type="text" name="id" readonly value="Tự động tạo">
 
                 <span>Title</span>
                 <input type="text" name="title">

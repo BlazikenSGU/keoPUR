@@ -1,4 +1,10 @@
 <?php
+
+session_start();
+ob_start();
+
+if(isset($_SESSION["role"]) && $_SESSION["role"] == 1) {
+
 include('../connectDB.php');
 ?>
 
@@ -44,6 +50,8 @@ include('../connectDB.php');
             <div class=" container section">
                 <h1 class="add_title">Quản lý bài viết</h1>
                 <a href="add.php" class="btn btn-primary button__add">Thêm bài viết</a>
+                <a href="http://localhost/keoPUR/" class="btn btn-success">Trang chủ Client</a>
+                <a class="btn btn-primary" href="logout.php">Đăng xuất</a>
                 <table class="table caption-top">
                   
                     <thead>
@@ -66,9 +74,14 @@ include('../connectDB.php');
                                 </td>
                                 <td class="td__img"><img src="uploads/<?= $row['image'] ?>" alt=""></td>
                                 <td>
-                                    <?= $row['createdAt'] ?>
+                                    <?php $ori =  $row['createdAt'];
+                                        $datetime = new DateTime($ori);
+                                        $formatDatetime = $datetime->format('H:i:s d-m-Y');
+
+                                        echo $formatDatetime;
+                                    ?>
                                 </td>
-                                <td>
+                                <td class="td__function">
                                     <a href="view.php?id=<?=$row['id']?>"><i class="far fa-eye"></i></a>
                                     <a href="edit.php?id=<?=$row['id']?>"><i class="fas fa-edit"></i></a>
                                     <a href="javascript:void(0);" onclick="confirmRemove(<?=$row['id']?>)" ><i class="far fa-trash-alt"></i></a>
@@ -102,3 +115,8 @@ include('../connectDB.php');
 </body>
 
 </html>
+
+<?php } else{
+    header('location: login.php');
+}
+?>

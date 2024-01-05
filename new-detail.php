@@ -94,14 +94,25 @@ if (isset($_GET['id'])) {
                 </h1>
                 <span>
                     <i class="ri-time-line"></i>:
-                    <?= $row['createdAt'] ?>
+                    <?php $ori = $row['createdAt'];
+                    $datetime = new DateTime($ori);
+                    $formatDatetime = $datetime->format('H:i:s d-m-Y');
+
+                    echo $formatDatetime;
+                    ?>
                 </span>
                 <img src="admin/uploads/<?= $row['image'] ?>" alt="">
-                <p>
-                    <?= $row['content'] ?>
-                </p>
+                <div>
+                    <?php
+                    $content = $row['content'];
+                    $content = preg_replace('/(<img[^>]*\s+src=["\'])upload\//i', '$1admin/upload/', $content);
+
+                    echo $content;
+                    ?>
+
+                </div>
             </div>
-            <hr>
+
         </section>
     </main>
 
@@ -109,6 +120,10 @@ if (isset($_GET['id'])) {
     <?php
     include('footer.php');
     ?>
+
+    <a href="new-detail/<?= $row['id'] ?>" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-circle-line scrollup__icon"></i>
+    </a>
 
     <script src="assets/js/main.js"></script>
     <script src="assets/js/back.js"></script>

@@ -45,32 +45,37 @@ if (isset($_GET['id'])) {
             <i class="fas fa-arrow-left"></i>
         </button>
 
-        <h1 class="add_title">Xem bai viet</h1>
+        <h1 class="add_title">Xem bài viết</h1>
         <?php if ($row = $get_item->fetch_assoc()) { ?>
 
-            <form action="" method="post" class="edit__news">
+            <form action="" method="post" class="add__news">
                 <span>ID:</span>
                 <input type="text" readonly value="<?= $row['id'] ?>">
 
                 <span>Title</span>
                 <input type="text" readonly value="<?= $row['title'] ?>">
 
-                <span>Image sản phẩm</span>
+                <span>Image đại diện</span>
                 <img src="uploads/<?= $row['image'] ?>" alt="">
-                <br>
-                <input type="text" readonly value="<?= $row['image'] ?>">
+
+                Source: <input type="text" readonly value="<?= $row['image'] ?>">
 
                 <span>Nội dung mô tả</span>
                 <div class="box">
                     <div class="form-group">
-                        <textarea readonly name="content" id="content" cols="50" rows="10">
-                                        <?= $row['content'] ?>
-                                        </textarea>
+                        <?= $row['content'] ?>
+
                     </div>
                 </div>
 
                 <span>Time</span>
-                <input type="text" readonly value="<?= $row['createdAt'] ?>">
+                <input type="text" readonly value="<?php
+                    $ori = $row['createdAt'];
+                    $datetime = new DateTime($ori);
+                    $formatDatetime = $datetime->format('H:i:s d-m-Y');
+
+                    echo $formatDatetime;
+                ?>">
                 <br>
 
             </form>

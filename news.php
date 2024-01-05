@@ -79,7 +79,12 @@ include('connectDB.php');
                                 </h3>
                                 <span>
                                     <i class="ri-time-line"></i>:
-                                    <?= $row['createdAt'] ?>
+                                    <?php $ori =  $row['createdAt'];
+                                        $datetime = new DateTime($ori);
+                                        $formatDatetime = $datetime->format('H:i:s d-m-Y');
+
+                                        echo $formatDatetime;
+                                    ?>
                                 </span>
                             </a>
                         </div>
@@ -88,7 +93,7 @@ include('connectDB.php');
                 <?php } ?>
 
             </div>
-            <hr>
+            
 
         </section>
     </main>

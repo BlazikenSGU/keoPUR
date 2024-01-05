@@ -193,7 +193,7 @@ img {
 
 @media screen and (min-width: 992px) {
     .container {
-       
+
         margin-left: auto;
         margin-right: auto;
     }
@@ -321,22 +321,27 @@ img {
 }
 
 /* page view */
-.container_view{
+.container_view {
     max-width: 980px;
     margin: 1rem auto;
 }
 
-.td__img{
+.td__img {
     width: 150px;
 }
 
-.add_news{
+.td__function a {
+    color: green;
+    padding: .5rem;
+}
+
+.add_news {
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
 }
 
-.add_news input[type="text"]{
+/* .add_news input[type="text"]{
     padding: .5rem ;
     margin: 1rem 0;
 }
@@ -345,48 +350,150 @@ img {
     width: fit-content;
     padding: .5rem 2rem;
     margin-top: 1.5rem;
+} */
+.add_news span {
+    font-weight: bold;
 }
 
-.back{
+.add_news input {
+    margin: .5rem 0;
+    padding: .5rem;
+}
+
+input[type="file"] {
+    border: 1px solid black;
+}
+
+.add_news input[type="submit"] {
+    width: fit-content;
+    padding: 0.5rem 2rem;
+    margin: 1rem auto 0;
+}
+
+.add_news .box {
+    margin-top: 1rem;
+}
+
+button#url {
+    padding: .5rem 2rem;
+}
+
+
+.back {
     margin: 2rem 0 1rem;
 }
 
-.add_title{
+.add_title {
     text-align: center;
 }
 
-.button__add{
+.button__add {
     margin: 1rem 0
 }
 
-.edit__news{
+.edit__news {
     padding: 1rem;
     display: flex;
     flex-direction: column;
 }
 
-.edit__news input{
+.edit__news input {
     margin-bottom: 1rem;
     padding: 0.5rem;
 }
 
-.edit__news span{
-    font-weight: 600;
-    margin-bottom: .3rem;
+.edit__news span {
+    font-weight: bold;
+    margin-bottom: .5rem;
 }
 
-.edit__news img{
-    width: 50%;
+.edit__news img {
+    width: 300px;
 }
 
-.edit__news textarea{
+.edit__news textarea {
     padding: .5rem;
     width: 100%;
 }
 
-/* page edit */
+/* .edit__news .box {
+    border: 1px solid silver;
+    padding: 1rem .5rem;
+    margin-bottom: .5rem;
+} */
+
 .edit__news input.btn.btn-success {
     width: fit-content;
     margin: 0 auto;
     padding: .5rem 2rem;
+}
+
+/* page add */
+.add__news {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.add__news input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+.add__news span {
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+.add__news img {
+    width: 300px;
+}
+
+.add__news textarea {
+    padding: .5rem;
+    width: 100%;
+}
+
+.add__news .box {
+    border: 1px solid silver;
+    padding: 1rem .5rem;
+    margin-bottom: .5rem;
+}
+
+.add__news input.btn.btn-success {
+    width: fit-content;
+    margin: 0 auto;
+    padding: .5rem 2rem;
+}
+
+.admin_form_login {
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.admin_form_login h2 {
+    text-align: center;
+}
+
+form.form_login {
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+form.form_login label {
+    font-weight: bold;
+}
+
+form.form_login input[type='text'] {
+    padding: .3rem;
+    margin: 1rem 0;
+}
+
+.form_login input.btn.btn-success {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.5rem 2rem;
 }

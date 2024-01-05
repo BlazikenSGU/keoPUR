@@ -378,28 +378,22 @@
                         Tin tức mới nhất về các dòng sản phẩm
                     </h2>
 
-                    <p class="about__description">
+                    <!-- <p class="about__description">
                         Chúng tôi có nhiều sản phẩm đến từ các nhãn hàng lớn trên thế giới với nhiều dạng phân loại để
                         sử dụng cho từng trường hợp khác nhau.
-                    </p>
+                    </p> -->
 
                     <div class="about__details">
-                        <p class="about__details-description">
-                            <i class="ri-checkbox-fill about__details-icon"></i>
-                            Ra mắt dòng sản phẩm mới về keo pur
-                        </p>
-                        <p class="about__details-description">
-                            <i class="ri-checkbox-fill about__details-icon"></i>
-                            Ra mắt dòng sản phẩm mới về keo pur
-                        </p>
-                        <p class="about__details-description">
-                            <i class="ri-checkbox-fill about__details-icon"></i>
-                            Ra mắt dòng sản phẩm mới về keo pur
-                        </p>
-                        <p class="about__details-description">
-                            <i class="ri-checkbox-fill about__details-icon"></i>
-                            Ra mắt dòng sản phẩm mới về keo pur
-                        </p>
+                        <?php
+                        include('connectDB.php');
+
+                        while ($row = $check2->fetch_assoc()) { ?>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                <?= $row['title'] ?>
+                            </p>
+
+                        <?php } ?>
                     </div>
 
                     <a href="news" id="newsLink" class="button--link button--flex">
