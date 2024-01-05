@@ -77,7 +77,6 @@ include('../connectDB.php');
                                     <?php $ori =  $row['createdAt'];
                                         $datetime = new DateTime($ori);
                                         $formatDatetime = $datetime->format('H:i:s d-m-Y');
-
                                         echo $formatDatetime;
                                     ?>
                                 </td>

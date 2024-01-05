@@ -911,6 +911,13 @@ body.dark-theme {
         padding: .5rem;
     }
 
+    
+}
+
+@media screen and (min-width:321px){
+    .grid-container{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
 
 /* for medium device */
@@ -1148,6 +1155,7 @@ body.dark-theme {
 }
 
 .detail-content span {
+    color: green;
     padding: 0 0 1rem;
 }
 
