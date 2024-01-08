@@ -36,7 +36,7 @@
                 Liên hệ
             </h3>
             <ul class="footer__data">
-                <li class="footer__infomation">+84 123 456 789</li>
+                <li class="footer__infomation">+84 911 397 916</li>
 
                 <div class="footer__social">
                     <a href="https://www.facebook.com/" class="footer__social-link">
@@ -60,7 +60,7 @@
                 <img src="assets/img/card1.png" alt="" class="footer__card">
                 <img src="assets/img/card2.png" alt="" class="footer__card">
                 <img src="assets/img/card3.png" alt="" class="footer__card">
-                <img src="assets/img/card4.png" alt="" class="footer__card">
+                <!-- <img src="assets/img/card4.png" alt="" class="footer__card"> -->
             </ul>
         </div>
     </div>

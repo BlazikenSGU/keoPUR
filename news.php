@@ -24,25 +24,25 @@ include('connectDB.php');
     <header class="header" id="header">
         <nav class="nav container">
             <a href="home" class="nav__logo">
-                <i class="ri-leaf-line nav__logo-icon"></i> Đông Bắc
+                <i class="ri-paint-fill nav__logo-icon"></i> Gia Công CLC
             </a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="home" class="nav__link ">Home</a>
+                        <a href="home" class="nav__link ">Trang chủ</a>
                     </li>
                     <li class="nav__item">
-                        <a href="" class="nav__link">About</a>
+                        <a href="#about" class="nav__link">Thông tin</a>
                     </li>
                     <li class="nav__item">
-                        <a href="" class="nav__link">Product</a>
+                        <a href="#products" class="nav__link">Sản phẩm</a>
                     </li>
                     <li class="nav__item">
-                        <a href="" class="nav__link active-link">News</a>
+                        <a href="#faqs" class="nav__link active-link">Tin tức</a>
                     </li>
                     <li class="nav__item">
-                        <a href="" class="nav__link">Contact</a>
+                        <a href="#contact" class="nav__link">Liên hệ</a>
                     </li>
                 </ul>
 
@@ -79,11 +79,11 @@ include('connectDB.php');
                                 </h3>
                                 <span>
                                     <i class="ri-time-line"></i>:
-                                    <?php $ori =  $row['createdAt'];
-                                        $datetime = new DateTime($ori);
-                                        $formatDatetime = $datetime->format('H:i:s d-m-Y');
+                                    <?php $ori = $row['createdAt'];
+                                    $datetime = new DateTime($ori);
+                                    $formatDatetime = $datetime->format('H:i:s d-m-Y');
 
-                                        echo $formatDatetime;
+                                    echo $formatDatetime;
                                     ?>
                                 </span>
                             </a>
@@ -93,7 +93,7 @@ include('connectDB.php');
                 <?php } ?>
 
             </div>
-            
+
 
         </section>
     </main>

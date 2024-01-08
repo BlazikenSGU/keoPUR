@@ -20,25 +20,25 @@
     <header class="header" id="header">
         <nav class="nav container">
             <a href="home" class="nav__logo">
-                <i class="ri-leaf-line nav__logo-icon"></i> Đông Bắc
+                <i class="ri-paint-fill nav__logo-icon"></i> Gia Công CLC
             </a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="home" class="nav__link active-link">Home</a>
+                        <a href="home" class="nav__link active-link">Trang chủ</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#about" class="nav__link">About</a>
+                        <a href="#about" class="nav__link">Thông tin</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#products" class="nav__link">Product</a>
+                        <a href="#products" class="nav__link">Sản phẩm</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#faqs" class="nav__link">News</a>
+                        <a href="#faqs" class="nav__link">Tin tức</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#contact" class="nav__link">Contact</a>
+                        <a href="#contact" class="nav__link">Liên hệ</a>
                     </li>
                 </ul>
 
@@ -375,13 +375,10 @@
 
                 <div class="about__data">
                     <h2 class="section__title about__title">
-                        Tin tức mới nhất về các dòng sản phẩm
+                        Tin tức mới nhất
                     </h2>
 
-                    <!-- <p class="about__description">
-                        Chúng tôi có nhiều sản phẩm đến từ các nhãn hàng lớn trên thế giới với nhiều dạng phân loại để
-                        sử dụng cho từng trường hợp khác nhau.
-                    </p> -->
+
 
                     <div class="about__details">
                         <?php
@@ -416,7 +413,7 @@
                             <h3 class="contact__subtitle"> Gọi cho chúng tôi để được tư vấn</h3>
                             <span class="contact__description">
                                 <i class="ri-phone-line"></i>
-                                +84 123 456 789
+                                +84 911 397 916
                             </span>
                         </div>
 
@@ -424,7 +421,7 @@
                             <h3 class="contact__subtitle"> Gửi thông tin cần hỗ trợ qua Email</h3>
                             <span class="contact__description">
                                 <i class="ri-mail-line"></i>
-                                user@gmail.com
+                                giacongclc@gmail.com
                             </span>
                         </div>
                     </div>
@@ -451,7 +448,7 @@
                     </div>
 
                     <button class="button button--flex" disabled>
-                        Send message
+                        Gửi ngay
                         <i class="ri-arrow-right-up-line button-icon"></i>
                     </button>
                 </form>
